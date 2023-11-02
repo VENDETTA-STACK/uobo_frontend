@@ -10,7 +10,7 @@ const CustomerReview = () => {
         key={data.id}
       >
         {/* IMAGE / SVG */}
-        <div className="h-8 lg:h-10 w-8 lg:w-10 bg-slate-300 rounded-full"></div>
+        <div className="h-8 lg:h-10 w-8 lg:w-10 bg-slate-300 rounded-full"><img src={data.image} alt="" /></div>
         <p className="mt-3 h-24 lg:h-28 text-xs">{data.review}</p>
         <p className="text-xs lg:text-sm font-semibold lg:font-normal">
           {data.name}
