@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
+import progress3Step2 from "../../../../assets/images/progress3Step2.png";
 
 const DealerCustomization = () => {
   const [delivery, setDelivery] = useState(true);
@@ -8,7 +9,7 @@ const DealerCustomization = () => {
   return (
     <div className="flex w-4/5">
       {/* LEFT SECTION */}
-      <div className="w-3/4 text-left mr-3">
+      <div className="w-2/3 text-left mr-3">
         {/* Heading */}
         <p className="text-xl font-bold p-0 m-0">
           Hey Jevin, Choose how you want to partner.
@@ -44,8 +45,10 @@ const DealerCustomization = () => {
               id="uoboDelivery"
               name="uoboDelivery"
             />
-            <Form.Check.Label>Use Uobo's delivery people</Form.Check.Label>
-            <Form.Control.Feedback type="valid" className="text-sm">
+            <Form.Check.Label className="text-black">
+              Use Uobo's delivery people
+            </Form.Check.Label>
+            <Form.Control.Feedback type="valid" className="text-sm text-black">
               30% fee per order
             </Form.Control.Feedback>
           </Form.Check>
@@ -63,8 +66,10 @@ const DealerCustomization = () => {
               id="selfDelivery"
               name="uoboDelivery"
             />
-            <Form.Check.Label>Use your own delivery staffs</Form.Check.Label>
-            <Form.Control.Feedback type="valid" className="text-sm">
+            <Form.Check.Label className="text-black">
+              Use your own delivery staffs
+            </Form.Check.Label>
+            <Form.Control.Feedback type="valid" className="text-sm text-black">
               15% fee per order
             </Form.Control.Feedback>
           </Form.Check>
@@ -73,7 +78,7 @@ const DealerCustomization = () => {
         {/* PICKUP */}
         <div
           className={`${
-            delivery ? "border-blue-500" : "border-gray-500"
+            pickup ? "border-blue-500" : "border-gray-500"
           } w-full p-3 rounded-2xl border-3 my-4`}
         >
           <div className="flex justify-between">
@@ -82,7 +87,7 @@ const DealerCustomization = () => {
               type="switch"
               id="custom-switch"
               defaultChecked
-              onChange={() => setDelivery(!delivery)}
+              onChange={() => setPickup(!pickup)}
               className="text-lg text-left ml-2"
             />
           </div>
@@ -94,29 +99,45 @@ const DealerCustomization = () => {
           <p className="text-sm text-slate-400 m-0 p-0">10% fee per order</p>
         </div>
 
-        <p className="text-sm text-slate-400 pl-5">
-          $350 activation fee will be charged per location &#9432;
-        </p>
+        {pickup && (
+          <div className="text-sm text-slate-400 pl-5">
+            $350 activation fee will be charged per location{" "}
+            <b className="text-blue-500">&#9432;</b>
+          </div>
+        )}
+
+        <button
+          type="submit"
+          className="bg-blue-500 text-xl text-white py-2 rounded-2xl w-48 float-right mb-10"
+        >
+          Submit
+        </button>
       </div>
 
       {/* RIGHT SECTION */}
-      <div className="w-1/4 ml-3 border-l">
+      <div className="w-1/3 ml-3 mt-20 border-l pl-6">
         {/* UPPER PROGRESS */}
         <div className="flex">
           {/* Progress */}
-          <div className="w-1/3 bg-blue-200 h-52"></div>
+          <img className="h-28" src={progress3Step2} alt="uoboFlow" />
           {/* Status Name*/}
-          <div className="w-2/3">
-            <p>Getting Started</p>
-            <p>Customize partnership</p>
-            <p>Review Agreement</p>
+          <div className="w-2/3 mt-1">
+            <p className="text-left ml-2">Getting Started</p>
+            <p className="text-left ml-2">Customize partnership</p>
+            <p className="text-left ml-2">Review Agreement</p>
           </div>
         </div>
-      </div>
-      {/* LOWER INFORMATION */}
-      <div className="bg-red-100 h-96 flex w-4/5">
-        <div className="h-full bg-blue-200"></div>
-        <div></div>
+        {/* LOWER INFORMATION */}
+        <div className="bg-blue-50 w-2/3 mt-20 p-3 mb-10">
+          <div className="flex items-center text-left">
+            <b className="text-blue-500">&#9432;</b>
+            <p className="ml-3">Why $350 charged for activation?</p>
+          </div>
+          <p className="text-sm text-left">
+            A one time activation fee will be charged per location only for
+            photo shoots, equipments and on-boarding.
+          </p>
+        </div>
       </div>
     </div>
   );

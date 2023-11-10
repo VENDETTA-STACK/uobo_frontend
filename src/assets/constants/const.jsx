@@ -38,3 +38,22 @@ export const ReviewData = [
     review: "Amazing platform, can't wait for the launch!",
   },
 ];
+
+export const AggrementPerks = [
+  {
+    id: 1,
+    text: "World class tech to help you run your dealership",
+  },
+  {
+    id: 2,
+    text: "Tech for deliveries, pickup nad test drives",
+  },
+  {
+    id: 3,
+    text: "Support for you and your customers",
+  },
+  {
+    id: 4,
+    text: "Management tools and analytics",
+  },
+];

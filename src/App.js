@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./component/feature/homepage/container/homePage.container";
 import DealerSignup from "./component/feature/dealerSignup/container/dealerSignup.container";
 import DealerCustomization from "./component/feature/dealerSignup/components/dealerCustomization";
+import DealerAgreement from "./component/feature/dealerSignup/components/dealerAgreement";
+import StartSelling from "./component/feature/dealerSignup/container/startSelling.container";
 
 function App() {
   return (
@@ -17,6 +19,16 @@ function App() {
               exact
               path="/dealer-customization"
               element={<DealerCustomization />}
+            />
+            <Route
+              exact
+              path="/dealer-agreement"
+              element={<DealerAgreement />}
+            />
+            <Route
+              exact
+              path="/dealer-logo-and-location"
+              element={<StartSelling />}
             />
             <Route path="*" element={<HomePage />} />
           </Routes>

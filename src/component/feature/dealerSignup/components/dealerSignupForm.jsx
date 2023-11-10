@@ -1,11 +1,11 @@
+import { React, useState } from "react";
+import * as Yup from "yup";
+import isEmpty from "lodash/isEmpty";
+import Form from "react-bootstrap/Form";
+import { ErrorMessage, Formik } from "formik";
+import FloatingLabel from "react-bootstrap/FloatingLabel";
 
 import FieldErrorMessage from "../../../common/error";
-import * as Yup from "yup";
-import Form from "react-bootstrap/Form";
-import { React, useState } from "react";
-import isEmpty from "lodash/isEmpty";
-import { ErrorMessage, Formik, FormikValues } from "formik";
-import FloatingLabel from "react-bootstrap/FloatingLabel";
 
 const DealerSignupForm = () => {
   const [confirmInfo, setConfirmInfo] = useState(false);
