@@ -10,7 +10,7 @@ const Working = () => {
         key={data.id}
       >
         {/* IMAGE / SVG */}
-        <div className="h-14 sm:h-24 w-14 sm:w-24 bg-slate-300 rounded-full"><img src={data.image} alt="" /></div>
+        <div className="h-14 sm:h-24 w-14 sm:w-24"><img src={data.image} alt="" className="h-24" /></div>
         <p className="mt-2 sm:mt-3 h-8 sm:h-10 text-xs sm:text-sm text-center">
           {data.name}
         </p>

@@ -51,7 +51,7 @@ const Finance = () => {
         </div>
       </div>
       {/* IMAGE / SVG */}
-      <div className="ml-4 mt-10 lg:mt-0 w-52 lg:w-72 h-52 lg:h-72 bg-slate-500 rounded-full"><img src={roundImage} alt="" /></div>
+      <div className="ml-4 mt-10 lg:mt-0 w-52 lg:w-72 h-52 lg:h-72"><img src={roundImage} alt="" /></div>
     </div>
   );
 };
