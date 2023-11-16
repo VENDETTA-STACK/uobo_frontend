@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const JoinNow = () => {
   return (
@@ -10,9 +11,12 @@ const JoinNow = () => {
         Future proof your dealership with Uobo. Signup now and be the amongst
         the first when we launch.
       </div>
-      <button className="bg-blue-500 text-white text-xs lg:text-sm p-3 mt-5 rounded-full">
+      <Link
+        to="/dealer-customization"
+        className="bg-blue-500 text-center text-white text-xs lg:text-sm p-3 mt-5 rounded-full no-underline"
+      >
         Join Uobo
-      </button>
+      </Link>
     </div>
   );
 };

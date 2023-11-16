@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -9,9 +10,12 @@ const Header = () => {
         </div>
         <div>
           <button className="mr-5 text-xs text-blue-500">Contact</button>
-          <button className="bg-blue-500 p-2 rounded-full text-xs text-white">
+          <Link
+            to="/dealer-signup"
+            className="bg-blue-500 p-2 rounded-full text-xs text-white no-underline"
+          >
             Join Uobo
-          </button>
+          </Link>
         </div>
       </div>
     </div>

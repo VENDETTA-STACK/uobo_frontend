@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const UoboIntro = () => {
   return (
@@ -29,9 +30,12 @@ const UoboIntro = () => {
 
       {/* SUBMIT BUTTON */}
       <div className="flex justify-center mt-10">
-        <button className="bg-blue-500 p-2 sm:p-3 rounded-full text-white text-xs sm:text-sm">
+        <Link
+          to="/dealer-customization"
+          className="bg-blue-500 p-2 sm:p-3 rounded-full text-white text-center text-xs sm:text-sm no-underline"
+        >
           Stay Updated
-        </button>
+        </Link>
       </div>
     </div>
   );

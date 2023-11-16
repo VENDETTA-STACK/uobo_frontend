@@ -6,11 +6,14 @@ import DealerSignup from "./component/feature/dealerSignup/container/dealerSignu
 import DealerCustomization from "./component/feature/dealerSignup/components/dealerCustomization";
 import DealerAgreement from "./component/feature/dealerSignup/components/dealerAgreement";
 import StartSelling from "./component/feature/dealerSignup/container/startSelling.container";
+import Header from "./component/common/header";
+import Footer from "./component/common/footer";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Header />
         <div className="flex justify-center">
           <Routes>
             <Route exact path="/home" element={<HomePage />} />
@@ -33,6 +36,7 @@ function App() {
             <Route path="*" element={<HomePage />} />
           </Routes>
         </div>
+        <Footer />
       </Router>
     </div>
   );

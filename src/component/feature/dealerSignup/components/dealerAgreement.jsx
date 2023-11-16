@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import progress3Step3 from "../../../../assets/images/progress3Step3.png";
 import { CheckMark } from "../../../../assets/icons/icons";
 import { AggrementPerks } from "../../../../assets/constants/const";
@@ -42,12 +44,12 @@ const DealerAgreement = () => {
           </a>
         </div>
 
-        <button
-          type="submit"
-          className="bg-blue-500 text-xl text-white py-2 rounded-2xl w-48 float-right mb-10"
+        <Link
+          to="/dealer-logo-and-location"
+          className="bg-blue-500 text-xl text-white text-center py-2 rounded-2xl w-48 float-right mb-10 no-underline"
         >
           I agree
-        </button>
+        </Link>
       </div>
 
       {/* RIGHT SECTION */}

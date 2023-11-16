@@ -3,11 +3,13 @@ import * as Yup from "yup";
 import isEmpty from "lodash/isEmpty";
 import Form from "react-bootstrap/Form";
 import { ErrorMessage, Formik } from "formik";
+import { useNavigate } from "react-router-dom";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 
 import FieldErrorMessage from "../../../common/error";
 
 const DealerSignupForm = () => {
+  const navigate = useNavigate();
   const [confirmInfo, setConfirmInfo] = useState(false);
 
   const DealerSignupFormValidationSchema = () =>
@@ -90,6 +92,7 @@ const DealerSignupForm = () => {
             totalLocation: values.totalLocation,
           };
           console.log("Form values>>", params);
+          navigate("/dealer-customization");
         }}
         validateOnChange={true}
         validateOnBlur={true}

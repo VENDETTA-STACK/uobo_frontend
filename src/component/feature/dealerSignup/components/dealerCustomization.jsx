@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
-import progress3Step2 from "../../../../assets/images/progress3Step2.png";
+import { useNavigate } from "react-router-dom";
 
+import progress3Step2 from "../../../../assets/images/progress3Step2.png";
 const DealerCustomization = () => {
+  const navigate = useNavigate();
   const [delivery, setDelivery] = useState(true);
   const [pickup, setPickup] = useState(true);
+
+  const handleRedirect = () => {
+    navigate("/dealer-agreement");
+  };
 
   return (
     <div className="flex w-4/5">
@@ -109,6 +115,7 @@ const DealerCustomization = () => {
         <button
           type="submit"
           className="bg-blue-500 text-xl text-white py-2 rounded-2xl w-48 float-right mb-10"
+          onClick={handleRedirect}
         >
           Submit
         </button>
