@@ -5,16 +5,16 @@ const Working = () => {
   const renderCards = () => {
     return StackData.map((data) => (
       <div
-        className="flex flex-col justify-center items-center p-1 sm:p-2 h-48 sm:h-64 w-32 sm:w-40 mt-10 sm:mt-5 lg:mt-0 rounded-xl border 
-        border-slate-200 shadow-xl shadow-blue-200"
+        className="flex flex-col justify-center items-center p-1 sm:p-2 max-h-64 w-32 sm:w-40 mt-10 sm:mt-5 lg:mt-0 rounded-xl border 
+        border-slate-200 shadow-xl shadow-blue-200 mx-2"
         key={data.id}
       >
         {/* IMAGE / SVG */}
-        <div className="h-14 sm:h-24 w-14 sm:w-24"><img src={data.image} alt="" className="h-24" /></div>
-        <p className="mt-2 sm:mt-3 h-8 sm:h-10 text-xs sm:text-sm text-center">
+        <img src={data.image} alt="" className="h-14 sm:24 mt-2" />
+        <p className="mt-2 sm:mt-3 text-xs sm:text-sm text-center">
           {data.name}
         </p>
-        <p className="text-center text-xs h-10">{data.content}</p>
+        <p className="text-center text-xs">{data.content}</p>
       </div>
     ));
   };

@@ -1,9 +1,9 @@
 import React from "react";
-import roundImage from '../../../../assets/images/Image.svg'
+import roundImage from "../../../../assets/images/Image.svg";
 
 const Finance = () => {
   return (
-    <div className="mt-24 flex flex-wrap lg:flex-nowrap w-4/5">
+    <div className="mt-24 flex flex-wrap justify-center lg:flex-nowrap w-4/5">
       {/* TEXT AREA */}
       <div className="w-full lg:w-1/2">
         <div className="text-2xl lg:text-4xl font-semibold">
@@ -51,7 +51,9 @@ const Finance = () => {
         </div>
       </div>
       {/* IMAGE / SVG */}
-      <div className="ml-4 mt-10 lg:mt-0 w-52 lg:w-72 h-52 lg:h-72"><img src={roundImage} alt="" /></div>
+      <div className="ml-4 mt-10 lg:mt-0 w-52 lg:w-72 h-52 lg:h-72">
+        <img src={roundImage} alt="" />
+      </div>
     </div>
   );
 };

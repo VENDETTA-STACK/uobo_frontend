@@ -3,7 +3,7 @@ import uoboFlow from "../../../../assets/images/uobo-flow.png";
 
 const WhyUobo = () => {
   return (
-    <div className="flex flex-wrap sm:flex-nowrap sm:justify-between mt-24 w-4/5">
+    <div className="flex flex-wrap justify-center lg:flex-nowrap lg:justify-between mt-24 w-4/5">
       <div>
         <p className="text-xl sm:text-3xl font-bold">Why Use Uobo?</p>
         <p className="text-xl sm:text-3xl font-bold text-blue-500">
@@ -27,7 +27,7 @@ const WhyUobo = () => {
         </div>
       </div>
       {/* IMAGE */}
-      <div>
+      <div className="hidden lg:block">
         <img
           className="w-4/5 my-10 sm:my-0 sm:w-auto"
           src={uoboFlow}
