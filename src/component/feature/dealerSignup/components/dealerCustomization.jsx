@@ -13,9 +13,9 @@ const DealerCustomization = () => {
   };
 
   return (
-    <div className="flex w-4/5">
+    <div className="flex xs:flex-wrap lg:flex-nowrap w-4/5">
       {/* LEFT SECTION */}
-      <div className="w-2/3 text-left mr-3">
+      <div className="lg:w-2/3 text-left mr-3 mt-5">
         {/* Heading */}
         <p className="text-xl font-bold p-0 m-0">
           Hey Jevin, Choose how you want to partner.
@@ -114,7 +114,7 @@ const DealerCustomization = () => {
 
         <button
           type="submit"
-          className="bg-blue-500 text-xl text-white py-2 rounded-2xl w-48 float-right mb-10"
+          className="bg-blue-500 text-xl text-white py-2 rounded-2xl w-48 float-right mb-10 mt-3"
           onClick={handleRedirect}
         >
           Submit
@@ -122,20 +122,26 @@ const DealerCustomization = () => {
       </div>
 
       {/* RIGHT SECTION */}
-      <div className="w-1/3 ml-3 mt-20 border-l pl-6">
+      <div className="lg:w-1/3 ml-3 mt-20 lg:border-l pl-6">
         {/* UPPER PROGRESS */}
         <div className="flex">
           {/* Progress */}
           <img className="h-28" src={progress3Step2} alt="uoboFlow" />
           {/* Status Name*/}
           <div className="w-2/3 mt-1">
-            <p className="text-left ml-2">Getting Started</p>
-            <p className="text-left ml-2">Customize partnership</p>
-            <p className="text-left ml-2">Review Agreement</p>
+            <p className="text-sm lg:text-base text-left ml-2">
+              Getting Started
+            </p>
+            <p className="text-sm lg:text-base text-left ml-2">
+              Customize partnership
+            </p>
+            <p className="text-sm lg:text-base text-left ml-2">
+              Review Agreement
+            </p>
           </div>
         </div>
         {/* LOWER INFORMATION */}
-        <div className="bg-blue-50 w-2/3 mt-20 p-3 mb-10">
+        <div className="bg-blue-50 lg:w-2/3 mt-20 p-3 mb-10">
           <div className="flex items-center text-left">
             <b className="text-blue-500">&#9432;</b>
             <p className="ml-3">Why $350 charged for activation?</p>

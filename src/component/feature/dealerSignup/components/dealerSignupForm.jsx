@@ -63,7 +63,7 @@ const DealerSignupForm = () => {
         .required(),
     });
   return (
-    <div className="w-1/2 h-98 overflow-auto">
+    <div className="lg:w-1/2 h-98 overflow-auto">
       <p className="text-bold font-bold text-2xl">GET STARTED</p>
 
       <Formik
@@ -154,7 +154,10 @@ const DealerSignupForm = () => {
                 />
               </FloatingLabel>
               <ErrorMessage name="link" component={FieldErrorMessage} />
-              <div className="flex items-center">
+              <div
+                className="flex w-full items-center text-left"
+                style={{ wordBreak: "break-word" }}
+              >
                 <div className="mr-2">
                   <strong className="font-extrabold text-blue-500">
                     &#9432;
@@ -177,7 +180,7 @@ const DealerSignupForm = () => {
               }`}
             >
               {/* FIRST NAME */}
-              <div className="w-45">
+              <div className="w-1/2">
                 <FloatingLabel
                   className={!!errors.firstName ? "mb-0" : "mb-3"}
                   // controlId="floatingInput"
@@ -197,7 +200,7 @@ const DealerSignupForm = () => {
               </div>
 
               {/* LAST NAME */}
-              <div className="w-45">
+              <div className="w-1/2 ml-2">
                 <FloatingLabel
                   className={!!errors.lastName ? "mb-0" : "mb-3"}
                   // controlId="floatingInput"
