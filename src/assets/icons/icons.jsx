@@ -79,7 +79,7 @@ export const DealerSignupLogo = (props) => (
     viewBox="0 0 388 387"
   >
     <defs>
-      <clipPath id="clip-path">
+      <clipPath id="clipPath">
         <ellipse
           id="Ellipse_333"
           data-name="Ellipse 333"
@@ -89,10 +89,10 @@ export const DealerSignupLogo = (props) => (
           ry="19.462"
           fill="#fff"
           stroke="#707070"
-          stroke-width="1"
+          strokeWidth="1"
         />
       </clipPath>
-      <clipPath id="clip-path-3">
+      <clipPath id="clipPath-3">
         <ellipse
           id="Ellipse_335"
           data-name="Ellipse 335"
@@ -103,10 +103,10 @@ export const DealerSignupLogo = (props) => (
           transform="translate(0.163 0)"
           fill="#fff"
           stroke="#707070"
-          stroke-width="1"
+          strokeWidth="1"
         />
       </clipPath>
-      <clipPath id="clip-path-6">
+      <clipPath id="clipPath-6">
         <ellipse
           id="Ellipse_335-2"
           data-name="Ellipse 335"
@@ -117,7 +117,7 @@ export const DealerSignupLogo = (props) => (
           transform="translate(-0.163 0.001)"
           fill="#fff"
           stroke="#707070"
-          stroke-width="1"
+          strokeWidth="1"
         />
       </clipPath>
     </defs>
@@ -134,7 +134,7 @@ export const DealerSignupLogo = (props) => (
         transform="translate(283.691 380.835)"
         fill="none"
         stroke="#95989a"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
       <line
         id="Line_10"
@@ -144,7 +144,7 @@ export const DealerSignupLogo = (props) => (
         transform="translate(167.655 380.835)"
         fill="none"
         stroke="#95989a"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
       <path
         id="Path_3052"
@@ -153,7 +153,7 @@ export const DealerSignupLogo = (props) => (
         transform="translate(271.679 361.076)"
         fill="none"
         stroke="#95989a"
-        stroke-width="1"
+        strokeWidth="1"
       />
       <path
         id="Path_3053"
@@ -162,7 +162,7 @@ export const DealerSignupLogo = (props) => (
         transform="translate(94.205 361.076)"
         fill="none"
         stroke="#95989a"
-        stroke-width="1"
+        strokeWidth="1"
       />
       <line
         id="Line_7"
@@ -172,7 +172,7 @@ export const DealerSignupLogo = (props) => (
         transform="translate(296.872 446.357)"
         fill="none"
         stroke="#95989a"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
       <line
         id="Line_11"
@@ -182,7 +182,7 @@ export const DealerSignupLogo = (props) => (
         transform="translate(182.991 446.357)"
         fill="none"
         stroke="#95989a"
-        stroke-width="0.5"
+        strokeWidth="0.5"
       />
       <line
         id="Line_8"
@@ -191,7 +191,7 @@ export const DealerSignupLogo = (props) => (
         transform="translate(256.213 279.63)"
         fill="none"
         stroke="#1a76ff"
-        stroke-width="2"
+        strokeWidth="2"
         opacity="0.8"
       />
       <g
@@ -213,7 +213,7 @@ export const DealerSignupLogo = (props) => (
           id="Mask_Group_1"
           data-name="Mask Group 1"
           transform="translate(-0.001 0)"
-          clip-path="url(#clip-path)"
+          clipPath="url(#clipPath)"
         >
           <g id="noun_User_829920" transform="translate(2.748 4.58)">
             <g
@@ -258,7 +258,7 @@ export const DealerSignupLogo = (props) => (
           id="Mask_Group_1-2"
           data-name="Mask Group 1"
           transform="translate(-0.001 0)"
-          clip-path="url(#clip-path)"
+          clipPath="url(#clipPath)"
         >
           <g
             id="noun_User_829920-2"
@@ -307,7 +307,7 @@ export const DealerSignupLogo = (props) => (
           id="Mask_Group_2"
           data-name="Mask Group 2"
           transform="translate(0 0)"
-          clip-path="url(#clip-path-3)"
+          clipPath="url(#clipPath-3)"
         >
           <g id="noun_people_3457284" transform="translate(-1.34 13.323)">
             <g
@@ -321,7 +321,7 @@ export const DealerSignupLogo = (props) => (
                 d="M188.677,4.44A5.857,5.857,0,1,1,182.82,10.3a5.857,5.857,0,0,1,5.857-5.857Z"
                 transform="translate(-167.384 -4.065)"
                 fill="#787c81"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
               <path
                 id="Path_3030"
@@ -329,7 +329,7 @@ export const DealerSignupLogo = (props) => (
                 d="M141.586,155.43c4.492,0,9.105,4.847,10.705,9.407-2.573,2.486-8.327,4.417-12.19,4.417-3.575,0-8.61-4.315-8.715-4.417,1.6-4.559,5.708-9.407,10.2-9.407Z"
                 transform="translate(-120.293 -142.307)"
                 fill="#787c81"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
               <path
                 id="Path_3031"
@@ -337,7 +337,7 @@ export const DealerSignupLogo = (props) => (
                 d="M355.782,0a4.8,4.8,0,1,1-4.8,4.8A4.8,4.8,0,0,1,355.782,0Z"
                 transform="translate(-321.346)"
                 fill="#787c81"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
               <path
                 id="Path_3032"
@@ -345,7 +345,7 @@ export const DealerSignupLogo = (props) => (
                 d="M338.945,123.81c3.684,0,6.837,2.634,8.149,6.373-2.109,2.038-8.289,4.306-8.821,4.231a19.445,19.445,0,0,0-5.684-7.445A8.238,8.238,0,0,1,338.945,123.81Z"
                 transform="translate(-304.509 -113.356)"
                 fill="#787c81"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
               <path
                 id="Path_3033"
@@ -353,7 +353,7 @@ export const DealerSignupLogo = (props) => (
                 d="M44.442,0a4.8,4.8,0,1,1-4.8,4.8A4.8,4.8,0,0,1,44.442,0Z"
                 transform="translate(-36.293)"
                 fill="#787c81"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
               <path
                 id="Path_3034"
@@ -361,7 +361,7 @@ export const DealerSignupLogo = (props) => (
                 d="M8.149,123.81a8.24,8.24,0,0,1,6.355,3.16,18.821,18.821,0,0,0-5.414,7.444c-.532.074-6.981-2.193-9.091-4.231,1.312-3.739,4.466-6.373,8.149-6.373Z"
                 transform="translate(0 -113.356)"
                 fill="#787c81"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
             </g>
           </g>
@@ -478,9 +478,9 @@ export const DealerSignupLogo = (props) => (
         id="UOBO"
         transform="translate(224.099 422.964)"
         fill="rgba(0,0,0,0.74)"
-        font-size="16"
-        font-family="Merel-Regular, Merel"
-        letter-spacing="0.35em"
+        fontSize="16"
+        fontFamily="Merel-Regular, Merel"
+        letterSpacing="0.35em"
       >
         <tspan x="0" y="0">
           UOBO
@@ -505,7 +505,7 @@ export const DealerSignupLogo = (props) => (
           id="Mask_Group_1-3"
           data-name="Mask Group 1"
           transform="translate(0 0.001)"
-          clip-path="url(#clip-path)"
+          clipPath="url(#clipPath)"
         >
           <g
             id="noun_User_829920-3"
@@ -554,7 +554,7 @@ export const DealerSignupLogo = (props) => (
           id="Mask_Group_1-4"
           data-name="Mask Group 1"
           transform="translate(0 -0.001)"
-          clip-path="url(#clip-path)"
+          clipPath="url(#clipPath)"
         >
           <g
             id="noun_User_829920-4"
@@ -591,7 +591,7 @@ export const DealerSignupLogo = (props) => (
         transform="translate(-13097.274 -5390.761)"
         fill="none"
         stroke="#707070"
-        stroke-width="1"
+        strokeWidth="1"
       />
       <g
         id="Group_10538"
@@ -612,7 +612,7 @@ export const DealerSignupLogo = (props) => (
           id="Mask_Group_2-2"
           data-name="Mask Group 2"
           transform="translate(0 0)"
-          clip-path="url(#clip-path-6)"
+          clipPath="url(#clipPath-6)"
         >
           <g
             id="noun_people_3457284-2"
@@ -626,7 +626,7 @@ export const DealerSignupLogo = (props) => (
                 d="M188.677,4.44a5.857,5.857,0,1,0,5.857,5.857,5.857,5.857,0,0,0-5.857-5.857Z"
                 transform="translate(-167.384 -4.065)"
                 fill="#787c81"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
               <path
                 id="Path_3030-2"
@@ -634,7 +634,7 @@ export const DealerSignupLogo = (props) => (
                 d="M142.091,155.43c-4.492,0-9.105,4.847-10.705,9.407,2.573,2.486,8.327,4.417,12.19,4.417,3.575,0,8.61-4.315,8.715-4.417-1.6-4.559-5.708-9.407-10.2-9.407Z"
                 transform="translate(-120.798 -142.307)"
                 fill="#787c81"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
               <path
                 id="Path_3031-2"
@@ -642,7 +642,7 @@ export const DealerSignupLogo = (props) => (
                 d="M355.782,0a4.8,4.8,0,1,0,4.8,4.8A4.8,4.8,0,0,0,355.782,0Z"
                 transform="translate(-347.633)"
                 fill="#787c81"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
               <path
                 id="Path_3032-2"
@@ -650,7 +650,7 @@ export const DealerSignupLogo = (props) => (
                 d="M340.739,123.81c-3.684,0-6.837,2.634-8.149,6.373,2.109,2.038,8.289,4.306,8.821,4.231a19.445,19.445,0,0,1,5.684-7.445A8.238,8.238,0,0,0,340.739,123.81Z"
                 transform="translate(-332.59 -113.356)"
                 fill="#787c81"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
               <path
                 id="Path_3033-2"
@@ -658,7 +658,7 @@ export const DealerSignupLogo = (props) => (
                 d="M44.442,0a4.8,4.8,0,1,0,4.8,4.8A4.8,4.8,0,0,0,44.442,0Z"
                 transform="translate(-10.006)"
                 fill="#787c81"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
               <path
                 id="Path_3034-2"
@@ -666,7 +666,7 @@ export const DealerSignupLogo = (props) => (
                 d="M6.355,123.81A8.24,8.24,0,0,0,0,126.97a18.821,18.821,0,0,1,5.414,7.444c.532.074,6.981-2.193,9.091-4.231-1.312-3.739-4.466-6.373-8.149-6.373Z"
                 transform="translate(28.081 -113.356)"
                 fill="#787c81"
-                fill-rule="evenodd"
+                fillRule="evenodd"
               />
             </g>
           </g>
@@ -679,8 +679,8 @@ export const DealerSignupLogo = (props) => (
         transform="translate(224.134 438.115)"
         fill="none"
         stroke="#e4e4e4"
-        stroke-linecap="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeWidth="2"
       />
       <line
         id="Line_12"
@@ -689,8 +689,8 @@ export const DealerSignupLogo = (props) => (
         transform="translate(224.134 438.115)"
         fill="none"
         stroke="#1a76ff"
-        stroke-linecap="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeWidth="2"
         opacity="0.8"
       />
       <ellipse
@@ -704,5 +704,79 @@ export const DealerSignupLogo = (props) => (
         fill="#b1b9c5"
       />
     </g>
+  </svg>
+);
+
+export const Bell = (props) => (
+  <svg
+    className={props.className}
+    height={props.height || "24"}
+    width={props.width || "24"}
+    viewBox="0 0 24 24"
+  >
+    <path d="M15.137 3.945c-.644-.374-1.042-1.07-1.041-1.82v-.003c.001-1.172-.938-2.122-2.096-2.122s-2.097.95-2.097 2.122v.003c.001.751-.396 1.446-1.041 1.82-4.667 2.712-1.985 11.715-6.862 13.306v1.749h20v-1.749c-4.877-1.591-2.195-10.594-6.863-13.306zm-3.137-2.945c.552 0 1 .449 1 1 0 .552-.448 1-1 1s-1-.448-1-1c0-.551.448-1 1-1zm3 20c0 1.598-1.392 3-2.971 3s-3.029-1.402-3.029-3h6z" />
+  </svg>
+);
+
+export const Play = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className={props.className}
+    viewBox="0 0 24 24"
+    height={props.height || "24"}
+    width={props.width || "24"}
+  >
+    <path d="M3 22v-20l18 10-18 10z" />
+  </svg>
+);
+
+export const Home = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className={props.className}
+    viewBox="0 0 24 24"
+    height={props.height || "24"}
+    width={props.width || "24"}
+  >
+    <path d="M 12 2 A 1 1 0 0 0 11.289062 2.296875 L 1.203125 11.097656 A 0.5 0.5 0 0 0 1 11.5 A 0.5 0.5 0 0 0 1.5 12 L 4 12 L 4 20 C 4 20.552 4.448 21 5 21 L 9 21 C 9.552 21 10 20.552 10 20 L 10 14 L 14 14 L 14 20 C 14 20.552 14.448 21 15 21 L 19 21 C 19.552 21 20 20.552 20 20 L 20 12 L 22.5 12 A 0.5 0.5 0 0 0 23 11.5 A 0.5 0.5 0 0 0 22.796875 11.097656 L 12.716797 2.3027344 A 1 1 0 0 0 12.710938 2.296875 A 1 1 0 0 0 12 2 z"></path>
+  </svg>
+);
+
+export const Inventory = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className={props.className}
+    viewBox="0 0 24 24"
+    height={props.height || "24"}
+    width={props.width || "24"}
+    fillRule="evenodd"
+    clipRule="evenodd"
+  >
+    <path d="M6 23h-3v-10l8.991-8.005 9.009 8.005v10h-3v-9h-12v9zm1-2h10v2h-10v-2zm0-3h10v2h-10v-2zm10-3v2h-10v-2h10zm-5-14.029l12 10.661-1.328 1.493-10.672-9.481-10.672 9.481-1.328-1.493 12-10.661z" />
+  </svg>
+);
+
+export const Help = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className={props.className}
+    viewBox="0 0 24 24"
+    height={props.height || "24"}
+    width={props.width || "24"}
+    fillRule="evenodd"
+    clipRule="evenodd"
+  >
+    <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm.053 17c.466 0 .844-.378.844-.845 0-.466-.378-.844-.844-.844-.466 0-.845.378-.845.844 0 .467.379.845.845.845zm.468-2.822h-.998c-.035-1.162.182-2.054.939-2.943.491-.57 1.607-1.479 1.945-2.058.722-1.229.077-3.177-2.271-3.177-1.439 0-2.615.877-2.928 2.507l-1.018-.102c.28-2.236 1.958-3.405 3.922-3.405 1.964 0 3.615 1.25 3.615 3.22 0 1.806-1.826 2.782-2.638 3.868-.422.563-.555 1.377-.568 2.09z" />
+  </svg>
+);
+
+export const Settings = (props) => (
+  <svg
+    className={props.className}
+    viewBox="0 0 24 24"
+    height={props.height || "24"}
+    width={props.width || "24"}
+  >
+    <path d="M24 14v-4c-1.619 0-2.906.267-3.705-1.476-.697-1.663.604-2.596 1.604-3.596l-2.829-2.828c-1.033 1.033-1.908 2.307-3.666 1.575-1.674-.686-1.404-2.334-1.404-3.675h-4c0 1.312.278 2.985-1.404 3.675-1.761.733-2.646-.553-3.667-1.574l-2.829 2.828c1.033 1.033 2.308 1.909 1.575 3.667-.348.849-1.176 1.404-2.094 1.404h-1.581v4c1.471 0 2.973-.281 3.704 1.475.698 1.661-.604 2.596-1.604 3.596l2.829 2.829c1-1 1.943-2.282 3.667-1.575 1.673.687 1.404 2.332 1.404 3.675h4c0-1.244-.276-2.967 1.475-3.704 1.645-.692 2.586.595 3.596 1.604l2.828-2.829c-1-1-2.301-1.933-1.604-3.595l.03-.072c.687-1.673 2.332-1.404 3.675-1.404zm-12 2c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" />
   </svg>
 );

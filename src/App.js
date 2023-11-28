@@ -8,6 +8,7 @@ import DealerAgreement from "./component/feature/dealerSignup/components/dealerA
 import StartSelling from "./component/feature/dealerSignup/container/startSelling.container";
 import Header from "./component/common/header";
 import Footer from "./component/common/footer";
+import Dashboard from "./component/feature/dashboard/container/dashboard.container";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
               path="/dealer-logo-and-location"
               element={<StartSelling />}
             />
+            <Route exact path="/dealer-dashboard" element={<Dashboard />} />
             <Route path="*" element={<HomePage />} />
           </Routes>
         </div>
