@@ -1,24 +1,25 @@
-import React from "react";
+import React from 'react'
 import { Link } from "react-router-dom";
 
 import {
-  Bell,
   Help,
   Home,
   Inventory,
   Play,
   Settings,
-} from "../../assets/icons/icons";
-
-const DashboardHeader = () => {
+} from "../../../assets/icons/icons";
+const Sidebar = ({ isOpen }) => {
   return (
     <>
-      {/* SIDEBAR */}
-      <aside
+    <aside
         id="separator-sidebar"
-        className="fixed top-0 left-0 z-40 w-48 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        // className="fixed top-0 left-0 z-40 w-48 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        className={`fixed inset-y-0 left-0 z-50 w-48 bg-gray-800 text-white transition-transform duration-300 ease-in-out transform ${
+            isOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
         aria-label="Sidebar"
       >
+        
         <div className="h-full py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
           <div className="text-left ml-4">
             <Link to="/" className="text-2xl font-bold text-black no-underline">
@@ -94,24 +95,8 @@ const DashboardHeader = () => {
             </li>
           </ul>
         </div>
-      </aside>
-      <div className="ml-56 flex justify-between">
-        {/* USERNAME */}
-        <div className="mt-4 ml-2">
-          <div className="text-left text-lg">Hey Jevin,</div>
-          <div className="text-sm text-slate-400">
-            Here's what happening in your dashboard.
-          </div>
-        </div>
-        <div className="flex items-center">
-          <Bell />
-          <div className="mx-3 border-blue-400 border-2 rounded-full h-10 w-10 flex items-center justify-center">
-            <div className="bg-black rounded-full h-8 w-8"></div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
+      </aside></>
+  )
+}
 
-export default DashboardHeader;
+export default Sidebar

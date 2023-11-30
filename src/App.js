@@ -1,20 +1,52 @@
-import "./App.css";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import HomePage from "./component/feature/homepage/container/homePage.container";
-import DealerSignup from "./component/feature/dealerSignup/container/dealerSignup.container";
-import DealerCustomization from "./component/feature/dealerSignup/components/dealerCustomization";
-import DealerAgreement from "./component/feature/dealerSignup/components/dealerAgreement";
-import StartSelling from "./component/feature/dealerSignup/container/startSelling.container";
+import "./App.css";
 import Header from "./component/common/header";
 import Footer from "./component/common/footer";
+import HomePage from "./component/feature/homepage/container/homePage.container";
 import Dashboard from "./component/feature/dashboard/container/dashboard.container";
+import DealerAgreement from "./component/feature/dealerSignup/components/dealerAgreement";
+import DealerSignup from "./component/feature/dealerSignup/container/dealerSignup.container";
+import StartSelling from "./component/feature/dealerSignup/container/startSelling.container";
+import DealerCustomization from "./component/feature/dealerSignup/components/dealerCustomization";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [inDashboard, setInDashboard] = useState(false);
+
+  useEffect(() => {
+    const updateScreenWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", updateScreenWidth);
+
+    //to check if route is of dealer dashboard
+    const path = window.location.pathname;
+    if (path.includes("dealer-dashboard")) {
+      setInDashboard(true);
+    }
+
+    return () => {
+      window.removeEventListener("resize", updateScreenWidth);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (screenWidth >= 768) {
+      setIsOpen(true);
+    }
+  }, [screenWidth]);
+
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <div className="App">
+    <div className="App h-screen bg-gray-100">
       <Router>
-        <Header />
+        <Header isOpen={isOpen} toggleSidebar={toggleSidebar} />
         <div className="flex justify-center">
           <Routes>
             <Route exact path="/home" element={<HomePage />} />
@@ -34,12 +66,34 @@ function App() {
               path="/dealer-logo-and-location"
               element={<StartSelling />}
             />
-            <Route exact path="/dealer-dashboard" element={<Dashboard />} />
+            <Route
+              exact
+              path="/dealer-dashboard"
+              element={<Dashboard isOpen={isOpen} />}
+            />
             <Route path="*" element={<HomePage />} />
           </Routes>
         </div>
         <Footer />
       </Router>
+
+      {/* Overlay */}
+      {isOpen && screenWidth <= 768 && inDashboard && (
+        <div
+          className="fixed inset-0 bg-black opacity-50 z-40"
+          onClick={toggleSidebar}
+        ></div>
+      )}
+
+      {/* Toggle Button */}
+      <button
+        className={`md:hidden fixed top-4 left-4 z-50 text-red-400 ${
+          isOpen ? "hidden" : ""
+        }`}
+        onClick={toggleSidebar}
+      >
+        Open
+      </button>
     </div>
   );
 }

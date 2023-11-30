@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import DashboardHeader from "./dashboardHeader";
+import DashboardHeader from "./dashboardHeader/dashboardHeader";
 
-const Header = () => {
+const Header = ({ isOpen, toggleSidebar }) => {
   const [inHome, setInHome] = useState(false);
   const [inDashboard, setInDashboard] = useState(false);
 
   useEffect(() => {
     const path = window.location.pathname;
-
-    console.log(">>", path.includes("home"));
     if (path.includes("home")) {
       setInHome(true);
     }
@@ -20,7 +18,7 @@ const Header = () => {
 
   return (
     <>
-      {inDashboard && <DashboardHeader />}
+      {inDashboard && <DashboardHeader isOpen={isOpen} toggleSidebar={toggleSidebar}/>}
       <div className="flex justify-center">
         {inHome && (
           <div className="flex justify-between w-full sm:w-4/5 mt-3">
