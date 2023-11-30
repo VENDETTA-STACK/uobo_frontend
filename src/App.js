@@ -44,7 +44,7 @@ function App() {
   };
 
   return (
-    <div className="App h-screen bg-gray-100">
+      <div className="App">
       <Router>
         <Header isOpen={isOpen} toggleSidebar={toggleSidebar} />
         <div className="flex justify-center">
@@ -78,6 +78,7 @@ function App() {
       </Router>
 
       {/* Overlay */}
+      {console.log("inDashboard",inDashboard)}
       {isOpen && screenWidth <= 768 && inDashboard && (
         <div
           className="fixed inset-0 bg-black opacity-50 z-40"
@@ -86,14 +87,14 @@ function App() {
       )}
 
       {/* Toggle Button */}
-      <button
+      {screenWidth <= 768 && inDashboard && (<button
         className={`md:hidden fixed top-4 left-4 z-50 text-red-400 ${
           isOpen ? "hidden" : ""
         }`}
         onClick={toggleSidebar}
       >
         Open
-      </button>
+      </button>)}
     </div>
   );
 }
