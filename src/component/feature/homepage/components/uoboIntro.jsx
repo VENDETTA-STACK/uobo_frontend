@@ -31,7 +31,6 @@ const UoboIntro = () => {
 
       {/* SUBMIT BUTTON */}
       <div className="flex justify-center mt-10">
-        {console.log("email>",email)}
         {!email&&<div className="bg-blue-500 px-4 py-2 sm:px-5 sm:py-3 rounded-full text-white text-center text-sm sm:text-base cursor-pointer"
         onClick={()=>setEmail(true)}>
           Stay Updated

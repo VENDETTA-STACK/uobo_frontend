@@ -9,12 +9,13 @@ const DealerAgreement = () => {
   return (
     <div className="flex w-2/3">
       {/* LEFT SECTION */}
-      <div className="w-3/4 text-left mr-3 pr-5">
+      <div className="w-3/4 text-left mt-4 mr-3 pr-5">
+      <Link to="/home" className="text-2xl text-black no-underline" >U O B O</Link>
         {/* Heading */}
-        <p className="text-xl font-bold my-7">Review Agreement</p>
+        <p className="text-xl my-7">Review Agreement</p>
 
         {/* What you get */}
-        <p className="text-lg font-semibold text-slate-500 mt-10">
+        <p className="text-lg text-slate-500 mt-10">
           What you get
         </p>
 
@@ -53,9 +54,9 @@ const DealerAgreement = () => {
       </div>
 
       {/* RIGHT SECTION */}
-      <div className="w-1/3 ml-3 mt-20 border-l pl-5">
+      <div className="w-1/3 ml-3 border-l pl-5">
         {/* UPPER PROGRESS */}
-        <div className="flex">
+        <div className="flex mt-20">
           {/* Progress */}
           <img className="h-28" src={progress3Step3} alt="uoboFlow" />
           {/* Status Name*/}

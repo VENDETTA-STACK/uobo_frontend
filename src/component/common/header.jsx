@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 import DashboardHeader from "./dashboardHeader/dashboardHeader";
 
 const Header = ({ isOpen, toggleSidebar }) => {
   const [inHome, setInHome] = useState(false);
   const [inDashboard, setInDashboard] = useState(false);
+    const location = useLocation();
 
-  useEffect(() => {
-    const path = window.location.pathname;
-    if (path.includes("home")) {
-      setInHome(true);
-    }
-    if (path.includes("dealer-dashboard")) {
-      setInDashboard(true);
-    }
-  }, []);
+    useEffect(() => {
+      const currentRoute = location.pathname;
+      if (currentRoute.includes("home")) {
+        setInHome(true);
+      }
+      if (currentRoute.includes("dealer-dashboard")) {
+        setInDashboard(true);
+      }
+    }, [location]);
 
   return (
     <>
@@ -24,14 +25,14 @@ const Header = ({ isOpen, toggleSidebar }) => {
           <div className="flex justify-between w-full sm:w-4/5 mt-3">
             <div>
               <Link
-                to="/"
+                to="/home"
                 className="text-2xl font-bold text-black no-underline"
               >
                 Uobo
               </Link>
             </div>
             <div>
-              <button className="mr-5 text-xs text-blue-500">Contact</button>
+              <a href="mailto:saleh.h.zarandah@gmail.com" className="mr-5 text-xs text-blue-500 no-underline">Contact</a>
               <Link
                 to="/dealer-signup"
                 className="bg-blue-500 p-2 rounded-full text-xs text-white no-underline"

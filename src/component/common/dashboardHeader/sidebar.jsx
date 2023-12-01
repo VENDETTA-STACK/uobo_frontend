@@ -14,15 +14,15 @@ const Sidebar = ({ isOpen }) => {
     <aside
         id="separator-sidebar"
         // className="fixed top-0 left-0 z-40 w-48 h-screen transition-transform -translate-x-full sm:translate-x-0"
-        className={`fixed inset-y-0 left-0 z-50 w-48 bg-gray-800 text-white transition-transform duration-300 ease-in-out transform ${
+        className={`fixed inset-y-0 left-0 z-50  md:w-48 bg-white text-white transition-transform duration-300 ease-in-out transform ${
             isOpen ? 'translate-x-0' : '-translate-x-full'
           }`}
         aria-label="Sidebar"
       >
         
-        <div className="h-full py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+        <div className="h-full py-4 overflow-y-auto bg-white dark:bg-gray-800 border-r">
           <div className="text-left ml-4">
-            <Link to="/" className="text-2xl font-bold text-black no-underline">
+            <Link to="/home" className="text-2xl text-black no-underline">
               Uobo
             </Link>
           </div>
@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen }) => {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group no-underline"
+                className="flex items-center p-2 text-black rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group no-underline"
               >
                 <Play className="flex-shrink-0" />
                 <span className="ms-2 whitespace-nowrap text-left">
@@ -44,7 +44,7 @@ const Sidebar = ({ isOpen }) => {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group no-underline"
+                className="flex items-center p-2 text-black rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group no-underline"
               >
                 <Home className="flex-shrink-0" />
                 <span className=" ms-2 whitespace-nowrap text-left">Home</span>
@@ -56,7 +56,7 @@ const Sidebar = ({ isOpen }) => {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group no-underline"
+                className="flex items-center p-2 text-black rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group no-underline"
               >
                 <Inventory className="flex-shrink-0" />
                 <span className=" ms-2 whitespace-nowrap text-left">
@@ -70,7 +70,7 @@ const Sidebar = ({ isOpen }) => {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group no-underline"
+                className="flex items-center p-2 text-black rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group no-underline"
               >
                 <Help className="flex-shrink-0" />
                 <span className=" ms-2 whitespace-nowrap text-left">Help</span>
@@ -82,7 +82,7 @@ const Sidebar = ({ isOpen }) => {
             <li>
               <a
                 href="#"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group no-underline"
+                className="flex items-center p-2 text-black rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group no-underline"
               >
                 <Settings className="flex-shrink-0" />
                 <span className=" ms-2 whitespace-nowrap text-left">

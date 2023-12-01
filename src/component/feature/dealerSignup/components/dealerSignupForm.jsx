@@ -46,7 +46,8 @@ const DealerSignupForm = () => {
         .max(80, "Address should be atmost of 80 characters*"),
       link: Yup.string()
         .matches(
-          /((https?):\/\/)?(www.)?[a-z0-9]+(\.[a-z]{2,}){1,3}(#?\/?[a-zA-Z0-9#]+)*\/?(\?[a-zA-Z0-9-_]+=[a-zA-Z0-9-%]+&?)?$/,
+          // eslint-disable-next-line no-useless-escape
+          /^(https?|ftp):\/\/[^\s\/?#]+(?:\/[^\s?#]*)?(?:\?[^\s#]*)?(?:#[^\s]*)?$/,
           "Enter correct url!"
         )
         .required("Please enter website"),
@@ -299,6 +300,7 @@ const DealerSignupForm = () => {
                   name="totalLocation"
                   id="totalLocation"
                   placeholder="totalLocation"
+                  // eslint-disable-next-line no-sequences
                   onChange={(e) => (e.target.name, e.target.value)}
                 />
               </FloatingLabel>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import Header from "./component/common/header";
@@ -23,7 +23,7 @@ function App() {
     window.addEventListener("resize", updateScreenWidth);
 
     //to check if route is of dealer dashboard
-    const path = window.location.pathname;
+    const path = window.location.pathname
     if (path.includes("dealer-dashboard")) {
       setInDashboard(true);
     }
@@ -78,7 +78,6 @@ function App() {
       </Router>
 
       {/* Overlay */}
-      {console.log("inDashboard",inDashboard)}
       {isOpen && screenWidth <= 768 && inDashboard && (
         <div
           className="fixed inset-0 bg-black opacity-50 z-40"
