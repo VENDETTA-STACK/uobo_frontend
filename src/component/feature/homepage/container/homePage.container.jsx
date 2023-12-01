@@ -8,7 +8,7 @@ import JoinNow from "../components/joinNow";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full sm:w-4/5 mt-10">
+    <div className="flex flex-col justify-center items-center w-full sm:w-11/12 mt-10">
       <UoboIntro />
       {/* <WhyUobo /> */}
       <Working />

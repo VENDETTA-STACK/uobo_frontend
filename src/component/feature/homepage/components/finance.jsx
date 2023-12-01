@@ -3,7 +3,7 @@ import roundImage from "../../../../assets/images/Image.svg";
 
 const Finance = () => {
   return (
-    <div className="mt-24 flex flex-wrap justify-center lg:flex-nowrap w-4/5">
+    <div className="mt-24 flex flex-wrap justify-center items-center lg:flex-nowrap w-11/12">
       {/* TEXT AREA */}
       <div className="w-full lg:w-1/2">
         <div className="text-2xl lg:text-4xl font-semibold">
@@ -11,7 +11,7 @@ const Finance = () => {
         </div>
         {/* DESCRIPTION */}
         <div>
-          <div className="flex items-center mt-8">
+          <div className="flex items-center justify-center text-left mt-8">
             <div className="bg-blue-500 w-4 lg:w-6 h-4 lg:h-6 rounded-full"></div>
             <div className="w-4/5 ml-3">
               <p className="text-slate-500 text-xs lg:text-sm font-semibold">
@@ -24,7 +24,7 @@ const Finance = () => {
             </div>
           </div>
 
-          <div className="flex  items-center mt-8">
+          <div className="flex justify-center items-center text-left mt-8">
             <div className="bg-blue-300 w-4 lg:w-6 h-4 lg:h-6 rounded-full"></div>
             <div className="w-4/5 ml-3">
               <p className="text-slate-500 text-xs lg:text-sm font-semibold">
@@ -37,7 +37,7 @@ const Finance = () => {
             </div>
           </div>
 
-          <div className="flex  items-center mt-8">
+          <div className="flex justify-center items-center text-left mt-8">
             <div className="bg-blue-200 w-4 lg:w-6 h-4 lg:h-6 rounded-full"></div>
             <div className="w-4/5 ml-3">
               <p className="text-slate-500 text-xs lg:text-sm font-semibold">
@@ -51,7 +51,7 @@ const Finance = () => {
         </div>
       </div>
       {/* IMAGE / SVG */}
-      <div className="ml-4 mt-10 lg:mt-0 w-52 lg:w-72 h-52 lg:h-72">
+      <div className="hidden sm:block ml-4 mt-10 lg:mt-0 w-52 lg:w-72 h-52 lg:h-72">
         <img src={roundImage} alt="" />
       </div>
     </div>
