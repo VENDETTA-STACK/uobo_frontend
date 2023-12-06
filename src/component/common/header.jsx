@@ -21,7 +21,7 @@ const Header = ({ isOpen, toggleSidebar }) => {
     <>
       {inDashboard && <DashboardHeader isOpen={isOpen} toggleSidebar={toggleSidebar}/>}
       <div className="flex justify-center">
-        {inHome && (
+        {true && (
           <div className="flex justify-between w-full sm:w-4/5 mt-3">
             <div>
               <Link
