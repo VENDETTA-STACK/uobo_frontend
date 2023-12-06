@@ -1,6 +1,5 @@
 import React from "react";
 import UoboIntro from "../components/uoboIntro";
-import WhyUobo from "../components/whyUobo";
 import Working from "../components/working";
 import Finance from "../components/finance";
 import CustomerReview from "../components/customerReview";
@@ -9,9 +8,9 @@ import JoinNow from "../components/joinNow";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col justify-center items-center w-full sm:w-4/5 mt-10">
+    <div className="flex flex-col justify-center items-center w-full sm:w-11/12 mt-10">
       <UoboIntro />
-      <WhyUobo />
+      {/* <WhyUobo /> */}
       <Working />
       <Finance />
       <CustomerReview />

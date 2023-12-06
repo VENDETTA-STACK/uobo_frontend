@@ -9,7 +9,7 @@ import men2 from '../images/Man2.jpg';
 export const StackData = [
   {
     id: 1,
-    name: "Creative",
+    name: "Creative Process",
     content: "We offer creative solution to our customer",
     image: image1
   },
@@ -27,7 +27,7 @@ export const StackData = [
   },
   {
     id: 4,
-    name: "Shared",
+    name: "Shared Economy",
     content: "Our shared economy values a win win ",
     image: image4
   },
@@ -43,7 +43,7 @@ export const ReviewData = [
   {
     id: 2,
     name: "Daniel Richards",
-    review: "As a delaership owner, Uobo revolutionized our business!",
+    review: "As a dealership owner, Uobo revolutionized our business!",
     image: men1
   },
   {
@@ -57,18 +57,18 @@ export const ReviewData = [
 export const AggrementPerks = [
   {
     id: 1,
-    text: "World class tech to help you run your dealership",
+    text: "Extended Customer Reach: Attract a wider customer base to your dealership.",
   },
   {
     id: 2,
-    text: "Tech for deliveries, pickup nad test drives",
+    text: "Convenience: Streamlined for customers and operational ease for your dealership.",
   },
   {
     id: 3,
-    text: "Support for you and your customers",
+    text: "Future-Proof Technology: Stay competitive in the evolving automotive landscape.",
   },
-  {
-    id: 4,
-    text: "Management tools and analytics",
-  },
+  // {
+  //   id: 4,
+  //   text: "Management tools and analytics",
+  // },
 ];

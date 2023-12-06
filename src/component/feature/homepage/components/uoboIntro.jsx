@@ -1,7 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+// import { Link } from "react-router-dom";
 
 const UoboIntro = () => {
+  const [email, setEmail] = useState(false);
   return (
     <div className="w-4/5 sm:w-3/5">
       <p className="text-center text-blue-500 font-bold text-sm sm:text-base">
@@ -30,12 +31,21 @@ const UoboIntro = () => {
 
       {/* SUBMIT BUTTON */}
       <div className="flex justify-center mt-10">
-        <Link
+        {!email&&<div className="bg-blue-500 px-4 py-2 sm:px-5 sm:py-3 rounded-full text-white text-center text-sm sm:text-base cursor-pointer"
+        onClick={()=>setEmail(true)}>
+          Stay Updated
+        </div>}
+        {email&&<div>
+          <input type="email" className="border-2 border-blue-500 rounded-md p-2 w-64" placeholder="Your Email"/>
+          <button className="bg-blue-500 text-white w-28 py-2 ml-4 rounded-md" onClick={()=>setEmail(false)}>Submit</button>
+        </div>
+        }
+        {/* <Link
           to="/dealer-customization"
-          className="bg-blue-500 p-2 sm:p-3 rounded-full text-white text-center text-xs sm:text-sm no-underline"
+          className="bg-blue-500 px-4 py-2 sm:px-5 sm:py-3 rounded-full text-white text-center text-sm sm:text-base no-underline"
         >
           Stay Updated
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

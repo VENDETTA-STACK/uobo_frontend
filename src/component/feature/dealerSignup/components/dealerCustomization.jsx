@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import progress3Step2 from "../../../../assets/images/progress3Step2.png";
 const DealerCustomization = () => {
@@ -16,8 +16,9 @@ const DealerCustomization = () => {
     <div className="flex xs:flex-wrap lg:flex-nowrap w-4/5">
       {/* LEFT SECTION */}
       <div className="lg:w-2/3 text-left mr-3 mt-5">
+        <Link to="/home" className="text-2xl text-black no-underline" >U O B O</Link>
         {/* Heading */}
-        <p className="text-xl font-bold p-0 m-0">
+        <p className="text-xl font-bold mt-4 p-0 m-0">
           Hey Jevin, Choose how you want to partner.
         </p>
         <p className="text-slate-400">You can change your selections later</p>
@@ -55,7 +56,7 @@ const DealerCustomization = () => {
               Use Uobo's delivery people
             </Form.Check.Label>
             <Form.Control.Feedback type="valid" className="text-sm text-black">
-              30% fee per order
+              5% commission per deal
             </Form.Control.Feedback>
           </Form.Check>
 
@@ -76,7 +77,7 @@ const DealerCustomization = () => {
               Use your own delivery staffs
             </Form.Check.Label>
             <Form.Control.Feedback type="valid" className="text-sm text-black">
-              15% fee per order
+              5% commission per deal
             </Form.Control.Feedback>
           </Form.Check>
         </div>
@@ -102,7 +103,7 @@ const DealerCustomization = () => {
             cost.
           </p>
 
-          <p className="text-sm text-slate-400 m-0 p-0">10% fee per order</p>
+          <p className="text-sm text-slate-400 m-0 p-0">5% commission per deal</p>
         </div>
 
         {pickup && (
@@ -122,9 +123,9 @@ const DealerCustomization = () => {
       </div>
 
       {/* RIGHT SECTION */}
-      <div className="lg:w-1/3 ml-3 mt-20 lg:border-l pl-6">
+      <div className="lg:w-1/3 ml-3 lg:border-l pl-6 ">
         {/* UPPER PROGRESS */}
-        <div className="flex">
+        <div className="flex mt-20">
           {/* Progress */}
           <img className="h-28" src={progress3Step2} alt="uoboFlow" />
           {/* Status Name*/}
