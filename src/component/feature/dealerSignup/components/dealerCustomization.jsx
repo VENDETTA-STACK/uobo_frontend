@@ -56,7 +56,7 @@ const DealerCustomization = () => {
               Use Uobo's delivery people
             </Form.Check.Label>
             <Form.Control.Feedback type="valid" className="text-sm text-black">
-              30% fee per order
+              5% commission per deal
             </Form.Control.Feedback>
           </Form.Check>
 
@@ -77,7 +77,7 @@ const DealerCustomization = () => {
               Use your own delivery staffs
             </Form.Check.Label>
             <Form.Control.Feedback type="valid" className="text-sm text-black">
-              15% fee per order
+              5% commission per deal
             </Form.Control.Feedback>
           </Form.Check>
         </div>
@@ -103,7 +103,7 @@ const DealerCustomization = () => {
             cost.
           </p>
 
-          <p className="text-sm text-slate-400 m-0 p-0">10% fee per order</p>
+          <p className="text-sm text-slate-400 m-0 p-0">5% commission per deal</p>
         </div>
 
         {pickup && (

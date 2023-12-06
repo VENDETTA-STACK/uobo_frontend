@@ -14,7 +14,7 @@ const Working = () => {
         <p className="mt-2 sm:mt-3 text-xs sm:text-sm text-center">
           {data.name}
         </p>
-        <p className="text-center text-xs">{data.content}</p>
+        {/* <p className="text-center text-xs">{data.content}</p> */}
       </div>
     ));
   };
