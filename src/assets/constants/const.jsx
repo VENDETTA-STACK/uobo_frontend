@@ -43,7 +43,7 @@ export const ReviewData = [
   {
     id: 2,
     name: "Daniel Richards",
-    review: "As a delaership owner, Uobo revolutionized our business!",
+    review: "As a dealership owner, Uobo revolutionized our business!",
     image: men1
   },
   {
