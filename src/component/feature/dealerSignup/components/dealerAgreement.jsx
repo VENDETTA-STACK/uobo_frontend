@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
@@ -11,7 +11,9 @@ const DealerAgreement = () => {
 
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
+  const handleClose = () => {
+    setShow(false);
+  }
   const handleShow = () => setShow(true);
 
   return (
@@ -101,9 +103,18 @@ I agree
         </Modal.Header>
         <Modal.Body>Woohoo, Welcome to UOBO family!</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          {/* <Button variant="secondary" onClick={handleClose}>
             Close
-          </Button>
+          </Button> */}
+
+          <Link
+            to="/"
+            className="bg-blue-500 text-xl text-white text-center py-2 rounded-2xl w-48 float-right mb-10 no-underline"
+            onClick={handleClose}
+          >
+            Close
+          </Link>
+
           {/* <Button variant="primary" onClick={handleClose}>
             Save Changes
           </Button> */}
