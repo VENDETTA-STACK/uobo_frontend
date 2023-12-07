@@ -1,12 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React,{useState} from "react";
+import { Link, Navigate } from "react-router-dom";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 import progress3Step3 from "../../../../assets/images/progress3Step3.png";
 import { CheckMark } from "../../../../assets/icons/icons";
 import { AggrementPerks } from "../../../../assets/constants/const";
 
 const DealerAgreement = () => {
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => {
+    setShow(false);
+  }
+  const handleShow = () => setShow(true);
+
   return (
+    <>
     <div className="flex w-2/3">
       {/* LEFT SECTION */}
       <div className="w-3/4 text-left mt-4 mr-3 pr-5">
@@ -45,13 +56,17 @@ const DealerAgreement = () => {
           </a>
         </div>
 
-        <Link
+        {/* <Link
           // to="/dealer-logo-and-location"
           to="/home"
           className="bg-blue-500 text-xl text-white text-center py-2 rounded-2xl w-48 float-right mb-10 no-underline"
         >
           I agree
-        </Link>
+        </Link> */}
+        
+<button onClick={handleShow} className="bg-blue-500 text-xl text-white text-center py-2 rounded-2xl w-48 float-right mb-10 no-underline">
+I agree
+</button>
       </div>
 
       {/* RIGHT SECTION */}
@@ -82,6 +97,30 @@ const DealerAgreement = () => {
         </div>
       </div>
     </div>
+    <Modal show={show} onHide={handleClose} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Thank you for Registration</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, Welcome to UOBO family!</Modal.Body>
+        <Modal.Footer>
+          {/* <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button> */}
+
+          <Link
+            to="/"
+            className="bg-blue-500 text-xl text-white text-center py-2 rounded-2xl w-48 float-right mb-10 no-underline"
+            onClick={handleClose}
+          >
+            Close
+          </Link>
+
+          {/* <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button> */}
+        </Modal.Footer>
+      </Modal>
+    </>
   );
 };
 

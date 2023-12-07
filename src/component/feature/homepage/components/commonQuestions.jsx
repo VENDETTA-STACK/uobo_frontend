@@ -22,7 +22,7 @@ const CommonQuestions = () => {
             How can dealerships join the platform?
           </div>
           <div className="mt-5 text-sm text-slate-500">
-            Dealerships can join Uobo via the 'Join Laba* button located on our
+            Dealerships can join Uobo via the 'Join Uobo' button located on our
             homepage. Simply fill in your dealersmios information and you will
             be set!
           </div>
