@@ -7,9 +7,22 @@ const DealerCustomization = () => {
   const navigate = useNavigate();
   const [delivery, setDelivery] = useState(true);
   const [pickup, setPickup] = useState(true);
+  const [uoboDelivery, setUoboDelivery] = useState(true);
+  const [ownDelivery, setOwnDelivery] = useState(false);
 
   const handleRedirect = () => {
-    navigate("/dealer-agreement");
+    const oldData = JSON.parse(localStorage.getItem("dealerSignup"));
+    
+    if (oldData) {
+    const final = {...oldData,uoboDelivery: `${uoboDelivery}`,ownDeliveryStaff: `${ownDelivery}`,customerPickUp: `${pickup}`}
+    localStorage.setItem("dealerSignup",JSON.stringify(final))
+
+    setTimeout(() => {
+      navigate("/dealer-agreement");
+    }, 100);
+  }
+  
+  else{navigate("/dealer-signup");}
   };
 
   return (
@@ -51,8 +64,9 @@ const DealerCustomization = () => {
               defaultChecked
               id="uoboDelivery"
               name="uoboDelivery"
+              onClick={()=>{setUoboDelivery(true); setOwnDelivery(false);}}
             />
-            <Form.Check.Label className="text-black">
+            <Form.Check.Label className="text-black" value="uboDelivery">
               Use Uobo's delivery people
             </Form.Check.Label>
             <Form.Control.Feedback type="valid" className="text-sm text-black">
@@ -72,6 +86,7 @@ const DealerCustomization = () => {
               isValid
               id="selfDelivery"
               name="uoboDelivery"
+              onClick={()=>{setUoboDelivery(false); setOwnDelivery(true);}}
             />
             <Form.Check.Label className="text-black">
               Use your own delivery staffs

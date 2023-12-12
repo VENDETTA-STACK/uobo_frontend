@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { ToastContainer } from 'react-toastify';
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import "./App.css";
+import 'react-toastify/dist/ReactToastify.css';
 import Header from "./component/common/header";
 import Footer from "./component/common/footer";
 import HomePage from "./component/feature/homepage/container/homePage.container";
@@ -94,6 +96,8 @@ function App() {
       >
         Open
       </button>)}
+      {/* FOR TOASTS */}
+      <ToastContainer/>
     </div>
   );
 }

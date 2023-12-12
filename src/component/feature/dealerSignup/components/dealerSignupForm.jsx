@@ -12,6 +12,40 @@ const DealerSignupForm = () => {
   const navigate = useNavigate();
   const [confirmInfo, setConfirmInfo] = useState(false);
 
+  const postDealerSignup = ({
+    dealerShipName,
+    address,
+    OMVICLicenceLink,
+    firstName,
+    lastName,
+    phoneNumber,
+    companyRole,
+    numberOfLocation,
+    uoboDelivery,
+    ownDeliveryStaff,
+    customerPickUp,
+    lat,
+    long,
+  }) => {
+    const params = {
+      dealerShipName: dealerShipName,
+      address: address,
+      OMVICLicenceLink: OMVICLicenceLink,
+      firstName: firstName,
+      lastName: lastName,
+      phoneNumber: phoneNumber,
+      companyRole: companyRole,
+      numberOfLocation: numberOfLocation,
+      uoboDelivery: uoboDelivery,
+      ownDeliveryStaff: ownDeliveryStaff,
+      customerPickUp: customerPickUp,
+      lat: lat,
+      long: long,
+    };
+    localStorage.setItem("dealerSignup", JSON.stringify(params));
+    navigate("/dealer-customization");
+  };
+
   const DealerSignupFormValidationSchema = () =>
     Yup.object().shape({
       firstName: Yup.string()
@@ -81,19 +115,18 @@ const DealerSignupForm = () => {
         }}
         onSubmit={(values) => {
           const params = {
-            dealershipName: values.dealershipName,
+            dealerShipName: values.dealershipName,
             address: values.address,
-            link: values.link,
+            OMVICLicenceLink: values.link,
             firstName: values.firstName,
             lastName: values.lastName,
-            phno: values.phno,
-            email: values.email,
-            confirmInfo: `${confirmInfo}`,
+            phoneNumber: values.phno,
             companyRole: values.companyRole,
-            totalLocation: values.totalLocation,
+            email: values.email,
+            // confirmInfo: `${confirmInfo}`,
+            numberOfLocation: values.totalLocation,
           };
-          console.log("Form values>>", params);
-          navigate("/dealer-customization");
+          postDealerSignup(params);
         }}
         validateOnChange={true}
         validateOnBlur={true}
