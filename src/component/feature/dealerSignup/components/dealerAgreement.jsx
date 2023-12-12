@@ -42,6 +42,7 @@ const DealerAgreement = () => {
         toast.success("Success", {
           position: toast.POSITION.TOP_RIGHT,
         });
+        localStorage.removeItem("dealerSignup");
       } catch (error) {
         console.error(error);
         toast.error("Something went wrong !", {
@@ -53,7 +54,6 @@ const DealerAgreement = () => {
 
   const handleClose = () => {
     setShow(false);
-    localStorage.removeItem("dealerSignup");
   };
 
   const handleShow = () => {
