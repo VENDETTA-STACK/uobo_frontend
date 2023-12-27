@@ -1,19 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const Footer = () => {
-  const [inDashboard, setInDashboard] = useState(false);
-
-  useEffect(() => {
-    const path = window.location.pathname;
-    if (path.includes("dealer-dashboard")) {
-      setInDashboard(true);
-    }
-  }, []);
   return (
     <div
-      className={`${
-        inDashboard && "ml-48"
-      } flex flex-wrap justify-evenly items-center mb-10 pt-10 border-t`}
+      className={`flex flex-wrap justify-evenly items-center mb-10 pt-10 border-t`}
     >
       <div className="text-slate-600 font-bold text-5xl px-2">Uobo</div>
       <div className="text-slate-500 font-semibold text-lg px-2">

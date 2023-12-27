@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { ToastContainer } from 'react-toastify';
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -14,41 +14,10 @@ import StartSelling from "./component/feature/dealerSignup/container/startSellin
 import DealerCustomization from "./component/feature/dealerSignup/components/dealerCustomization";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  const [inDashboard, setInDashboard] = useState(false);
-
-  useEffect(() => {
-    const updateScreenWidth = () => {
-      setScreenWidth(window.innerWidth);
-    };
-    window.addEventListener("resize", updateScreenWidth);
-
-    //to check if route is of dealer dashboard
-    const path = window.location.pathname
-    if (path.includes("dealer-dashboard")) {
-      setInDashboard(true);
-    }
-
-    return () => {
-      window.removeEventListener("resize", updateScreenWidth);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (screenWidth >= 768) {
-      setIsOpen(true);
-    }
-  }, [screenWidth]);
-
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
       <div className="App">
       <Router>
-        <Header isOpen={isOpen} toggleSidebar={toggleSidebar} />
+        <Header/>
         <div className="flex justify-center">
           <Routes>
             <Route exact path="/home" element={<HomePage />} />
@@ -71,7 +40,7 @@ function App() {
             <Route
               exact
               path="/dealer-dashboard"
-              element={<Dashboard isOpen={isOpen} />}
+              element={<Dashboard/>}
             />
             <Route path="*" element={<HomePage />} />
           </Routes>
@@ -79,23 +48,6 @@ function App() {
         <Footer />
       </Router>
 
-      {/* Overlay */}
-      {isOpen && screenWidth <= 768 && inDashboard && (
-        <div
-          className="fixed inset-0 bg-black opacity-50 z-40"
-          onClick={toggleSidebar}
-        ></div>
-      )}
-
-      {/* Toggle Button */}
-      {screenWidth <= 768 && inDashboard && (<button
-        className={`md:hidden fixed top-4 left-4 z-50 text-red-400 ${
-          isOpen ? "hidden" : ""
-        }`}
-        onClick={toggleSidebar}
-      >
-        Open
-      </button>)}
       {/* FOR TOASTS */}
       <ToastContainer/>
     </div>
