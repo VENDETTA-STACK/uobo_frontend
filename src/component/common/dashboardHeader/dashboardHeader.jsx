@@ -36,7 +36,7 @@ const DashboardHeader = () => {
   return (
     <div className="flex justify-end sm:justify-between w-full relative">
       {/* Responsive header Button */}
-      <div className="sm:hidden absolute z-10 left-20">
+      <div className="sm:hidden absolute z-10 left-2">
         <Navbar expand="lg" bg="primary" className="bg-body-tertiary p-0">
           <Container className="bg-transparent p-0 rounded">
             <Navbar.Toggle
